@@ -25,22 +25,40 @@ instead of being re-told.
 
 [vinsonconsulting/limner](https://github.com/vinsonconsulting/limner)
 
+## phineas-case-study: applied AI in production
+
+A public case study of PHINEAS, a CEFR teaching assistant I build for an
+English-language school: paste in a text and it returns the CEFR level, a
+word-by-word vocabulary breakdown, and the passage rewritten one level easier and
+one level harder. The product is live at [phineas.app](https://phineas.app); this
+repo is the part I can show in full — the architecture write-up and a redacted,
+runnable TypeScript reference implementation.
+
+The decision worth reading: the CEFR levels are served from a database, not asked
+of the model, so leveling is settled before any model call is made. A human-gated
+dual-loop flywheel feeds approved corrections back both ways — into the per-word
+database lookups and into the model's training examples. Client identity and data
+are redacted; the vocabulary is synthetic and the prompts paraphrased.
+
+[vinsonconsulting/phineas-case-study](https://github.com/vinsonconsulting/phineas-case-study)
+
 ## The eval story: building the measurement
 
 A product manager's job includes building the measurement, not only the feature.
 Two repos are that work.
 
 [claude-skill-foundry](https://github.com/vinsonconsulting/claude-skill-foundry)
-is a library of portable Claude skills where each one ships a Skill Card: a
-recorded SkillSpector security scan plus measured trigger metrics, gated in CI.
-The catalog reads straight from the cards, so the numbers cannot quietly drift
-from the truth. Coverage is still filling in (4 of 6 skills carded today), and the
-catalog says so rather than printing a number it cannot back up.
+is a scoring harness for Claude skills. Each carded skill ships a Skill Card: a
+recorded SkillSpector security scan and trigger evals, generated and gated in CI
+so the catalog cannot quietly drift from what was measured. Coverage is still
+filling in (4 of 6 skills carded today, and trigger precision/recall is the next
+measurement to land), and the catalog says so rather than printing a number it
+cannot back up.
 
-[califa-cards](https://github.com/vinsonconsulting/califa-cards) is the standard
-and tooling underneath: the schema, the security gate, and the generators the
-cabinets consume as a dependency. It is the nutrition label for an agent skill,
-plus the machinery that enforces it.
+[califa-cards](https://github.com/vinsonconsulting/califa-cards) is the
+specification and toolkit underneath: the Skill Card schema, the security gate,
+and the generators the foundry consumes as a dependency. It is the nutrition
+label for an agent skill, plus the machinery that enforces it.
 
 ## lily-livered: craft and shipping discipline
 
@@ -67,7 +85,6 @@ produce on its own.
 ## Elsewhere
 
 Portfolio, case studies, and credentials: [jimvinson.com](https://jimvinson.com).
-A live product in the same vein: [phineas.app](https://phineas.app).
 
 Open to full-time AI Product Manager, Technical Program Manager, or Operations
 roles. Bay Area or genuine remote.
