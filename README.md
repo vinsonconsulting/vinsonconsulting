@@ -1,12 +1,11 @@
 # Jim Vinson
 
 AI Product Manager and Technical Program Manager. I build operational AI systems:
-software that does real work, plus the harnesses and measurements that keep it
-honest. The pattern runs both directions: I develop systems in order to deploy
-them, and I deploy systems in order to build the next ones better.
+pipelines and harnesses that do actual work, plus the operational, maintenance, and measurement layers that make them possible. 
+My projects are architected and built from modular primitives, developed to allow for their own decomposition when desired. 
 
 Most of the substantive builds are private client and product work. The
-repositories pinned here are the parts I can show in full. They are smaller than
+repositories pinned here are the parts I can show in full (or have explicit client permission to display). They are smaller than
 the private work, but they are complete, and they carry the decisions behind them
 in the open.
 
