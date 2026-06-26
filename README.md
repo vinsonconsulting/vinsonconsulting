@@ -69,9 +69,19 @@ and takes the median (so the badge stays honest, and a bit less flakey).
 [vinsonconsulting/lily-livered](https://github.com/vinsonconsulting/lily-livered)
 · [live demo](https://lily-livered.jimvinson.com)
 
+## Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat&logo=astro&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+
 ## Elsewhere
 
-Portfolio, case studies, and credentials: [jimvinson.com](https://jimvinson.com).
+Portfolio, case studies, and credentials: [jimvinson.com](https://jimvinson.com). Find
+me on [LinkedIn](https://www.linkedin.com/in/jimvinson/).
 
 Open to full-time AI Product Manager, Technical Program Manager, or Operations
 roles. Bay Area or genuine remote.
