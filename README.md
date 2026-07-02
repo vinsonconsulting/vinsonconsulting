@@ -31,13 +31,13 @@ English-language school: paste in a text and it returns the CEFR level, a
 word-by-word vocabulary breakdown, and the passage rewritten to a new CEFR level. 
 
 The product is live at [phineas.app](https://phineas.app); this
-repo is the part I can show in full — the architecture write-up and a redacted,
+repo is the part I can show in full: the architecture write-up and a redacted,
 runnable TypeScript reference implementation.
 
 The decision worth reading: the CEFR levels are served from a bespoke corpus, not asked
 of the model, so leveling is regulated before any model call is made. A human-gated
-dual-loop flywheel feeds approved corrections back both ways — into the per-word
-database lookups and into the model's training examples. Client identity and data
+dual-loop flywheel feeds approved corrections back both ways: into the per-word
+database lookups and into the model's many-shot examples. Client identity and data
 are redacted; the vocabulary is synthetic and the prompts paraphrased.
 
 [vinsonconsulting/phineas-case-study](https://github.com/vinsonconsulting/phineas-case-study)
@@ -64,7 +64,7 @@ label for an agent skill, plus the machinery that enforces it.
 A one-page Astro site for domains that have an email address and not much else. I
 keep it here as a sample of shipping discipline: semantic-version releases, Renovate for
 dependencies, Biome for linting, and CI that runs Lighthouse three times per push
-and takes the median (so the badge stays honest, and a bit less flakey).
+and takes the median (so the badge stays honest, and a bit less flaky).
 
 [vinsonconsulting/lily-livered](https://github.com/vinsonconsulting/lily-livered)
 · [live demo](https://lily-livered.jimvinson.com)
