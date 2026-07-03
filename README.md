@@ -50,9 +50,10 @@ Two repos are that work.
 [claude-skill-foundry](https://github.com/vinsonconsulting/claude-skill-foundry)
 is a development and scoring harness for Claude skills. Each carded skill ships a Skill Card: a
 recorded SkillSpector security scan, eval results, and trigger evals: generated and gated in CI
-so the catalog cannot quietly drift from what was measured. Coverage is still
-filling in (trigger precision/recall is the next measurement to land), and the catalog says so 
-rather than printing a number it cannot back up.
+so the catalog cannot quietly drift from what was measured. Two of the four carded
+skills publish live-measured trigger precision and recall today; the rest show a
+dash until their eval runs land, because the catalog does not print a number it
+cannot back up.
 
 [califa-cards](https://github.com/vinsonconsulting/califa-cards) is the
 specification and toolkit underneath: the Skill Card schema, the security gate,
